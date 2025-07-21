@@ -13,6 +13,9 @@
     font-size: 16px
 
 }
+.hide{
+    display: none;
+}
   
 /* font lato  */
  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
@@ -31,12 +34,16 @@
     display: none;
     font-size: 22px;
   }
-nav{
+  #close-menu {
+  display: none;
+}
+
+ nav{
     display: flex;
     justify-content: space-between;
     padding: 35px 70px;
     align-items: center;
-}
+ }
 nav ul{
     display: flex;
     
@@ -61,9 +68,7 @@ nav ul a{
     margin: 0 5px;
     
 }
-#close-menu {
-  display: none;
-}
+
 
 /* header part  */
 .parent-container{
@@ -196,17 +201,17 @@ footer{
       .menu-toggle{
     display: block;
   }
-   .nav-container {
+   /* .nav-container {
         padding: 0 20px;
-    }
+    } */
  
    nav ul {
     display: none;
     flex-direction: column;
-    background-color: white;
+    background-color: #500635;
     width: 100%;
     position: absolute;
-    top: 100%;
+    top: 60px;
     left: 0;
     text-align: center;
     gap: 15px;
@@ -214,7 +219,7 @@ footer{
   }
    
   nav{
-    padding: 20px 30px;
+    padding: 20px 20px;
   }
 
   nav ul.active {
@@ -223,15 +228,20 @@ footer{
 
   nav ul li a {
     margin: 10px 0px;
+    color: white;
   }
+  /* .icon{
+     margin-left: 0px;
+  } */
   .parent-container{
      flex-direction: column;
-    margin:  50px 20px;
+    margin:  50px 30px;
     align-items: center;
    
    
+   
 }
-.camera-img{
+.camera-img img{
     max-width: 100%;
 }
 .header-title h2{
